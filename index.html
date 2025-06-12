@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absalom Ayabie | Remote IT Systems & CRM Expert</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #1e293b;
+      padding: 1rem;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .nav-label {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .nav-menu a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2, h3 {
+      color: #ffffff;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #3b82f6;
+      color: #fff;
+      border-radius: 0.375rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+      background-color: #1e293b;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .centered {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 0.375rem;
+    }
+    input[type="submit"] {
+      background-color: #3b82f6;
+      color: white;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .nav-label {
+        display: block;
+      }
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-toggle:checked + .nav-label + .nav-menu {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-label">☰ Menu</label>
+    <div class="nav-menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="centered">
+      <h1>Absalom Ayabie</h1>
+      <h2>Remote IT Systems & CRM Expert</h2>
+      <p>I build scalable tools that automate, secure & grow your business</p>
+      <div>
+        <a href="mailto:your-email@example.com" class="button">Email Me</a>
+        <a href="https://linkedin.com/in/yourprofile" class="button">LinkedIn</a>
+        <a href="/resume.pdf" class="button">Resume</a>
+      </div>
+    </div>
+
+    <div class="section" id="about">
+      <h3>About Me</h3>
+      <p>
+        I'm a remote-first IT systems expert with 7+ years of experience delivering web development,
+        CRM platforms, and infrastructure support for clients in energy, education, and tech. Whether you're a startup needing a custom CRM or an enterprise streamlining operations, I design tools that turn tech into a growth engine.
+      </p>
+    </div>
+
+    <div class="section" id="services">
+      <h3>Services</h3>
+      <ul>
+        <li>Full-stack Web Development (PHP, HTML, CSS, JS)</li>
+        <li>Custom CRMs, portals, and ticketing systems</li>
+        <li>UI/UX Design & Optimization</li>
+        <li>IT Infrastructure & Network Management</li>
+        <li>SEO & Website Performance Optimization</li>
+      </ul>
+    </div>
+
+    <div class="section" id="projects">
+      <h3>Projects</h3>
+      <ul>
+        <li><a href="https://postgraduate.nias.gov.ng/" target="_blank">Postgraduate College of Animal Science Portal</a></li>
+        <li><a href="https://vanexcellconsults.com/" target="_blank">VanExcell Consults Website</a></li>
+        <li><a href="https://eazy.sarl/" target="_blank">EazyEat Platform</a></li>
+        <li><a href="https://eazycard.sarl/" target="_blank">EazyCard Public Site</a> | <a href="https://app.eazycard.sarl" target="_blank">App Portal</a></li>
+        <li><a href="https://www.igandoelectric.com/" target="_blank">Igando Electric Website</a></li>
+        <li><a href="https://greyedgeglobalpower.com/" target="_blank">GreyEdge Global Power Website</a></li>
+        <li><a href="https://nastaenergyoilandgasnig.com/" target="_blank">Nasta Energy Oil and Gas</a></li>
+        <li><a href="https://panandyoilandgas.com/" target="_blank">Panandy Oil and Gas</a></li>
+        <li><a href="https://arktechnologiesgroup.com/" target="_blank">Ark Technologies</a></li>
+      </ul>
+    </div>
+
+    <div class="section" id="contact">
+      <h3>Contact Me</h3>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
